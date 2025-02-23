@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Monad Coinflip
 
-## Getting Started
+This repo contains a Nextjs application plugged on the [Monad Testnet](https://testnet.monad.xyz/) to play the Coinflip game. All the logic is on-chain for a transparent and fair experience: [coinflip contract](https://testnet.monadexplorer.com/address/0xdf62DdF15273acB9D7E2942b9981eb4a6A604fae). The entropy system used is [Pyth](https://docs.pyth.network/entropy).
 
-First, run the development server:
+## Rules & how to play
 
+The rules are simple: choose a face of the coin and let chance decide. If you are right, then you double your bet. Otherwise, you lose everything!
+
+How to play:
+1. Connect your wallet
+2. Select Heads or Tails
+3. Enter the amount you want to bet
+4. Click on the "Flip a coin" button
+
+Note: you can't bet more than what the contract can give you if you win. It means that you can bet a maximum of half the contract's balance.
+
+## Run locally
+
+First, install the dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, create a `.env` file following the `.env.example` file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Finally, run:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future improvements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Add an history system of the user's bets
+2. Add a leader board for the best winners and loosers
+3. Add a max button to facilitate max bet
