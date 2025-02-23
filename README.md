@@ -1,6 +1,6 @@
 # Monad Coinflip
 
-This repo contains a Nextjs application plugged on the [Monad Testnet](https://testnet.monad.xyz/) to play the Coinflip game. All the logic is on-chain for a transparent and fair experience: [coinflip contract](https://testnet.monadexplorer.com/address/0xdf62DdF15273acB9D7E2942b9981eb4a6A604fae). The entropy system used is [Pyth](https://docs.pyth.network/entropy).
+This repo contains a Nextjs application plugged on the [Monad Testnet](https://testnet.monad.xyz/) to play the Coinflip game. All the logic is on-chain for a transparent and fair experience: [coinflip contract](https://testnet.monadexplorer.com/address/0xdf62DdF15273acB9D7E2942b9981eb4a6A604fae). The entropy system used is [Pyth](https://docs.pyth.network/entropy). The repo used for the smart contract is [here](https://github.com/Camillebzd/coinflip-contract).
 
 ## Rules & how to play
 

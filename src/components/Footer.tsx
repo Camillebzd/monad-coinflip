@@ -126,7 +126,7 @@ export default function Footer() {
           spacing={4}
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}>
-          <Text>© 2025 Coinflip Monad testnet. No rights reserved, use me to build better thing!</Text>
+          <Text>© 2025 Coinflip Monad testnet. No rights reserved, use me to build better things!</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'https://x.com/monad_dev'}>
               <FaXTwitter />
@@ -137,7 +137,7 @@ export default function Footer() {
             <SocialButton label={'Telegram'} href={'#'}>
               <FaTelegram />
             </SocialButton>
-            <SocialButton label={'Github'} href={'#'}>
+            <SocialButton label={'Github'} href={'https://github.com/Camillebzd/monad-coinflip'}>
               <FaGithub />
             </SocialButton>
           </Stack>
